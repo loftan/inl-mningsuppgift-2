@@ -1,0 +1,213 @@
+@import url(/bilder/apl.png);
+@import url(bilder/eye.png);
+@import url(bilder/google.png);
+@import url(bilder/fb.png);
+
+* {
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+
+.top-bar {
+    background-color:#faf6f5;
+    height: 8em;
+    position: relative;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.toptext-B {
+    color:#a9a8a6;
+    text-indent: -10000px;
+}
+
+article {
+    width:85%;
+    margin: auto;
+
+}
+
+article h5, h1 {
+    margin-top:  1rem;
+}
+
+.btn {
+    margin-top:2em;
+    height:2.5em;
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.google-btn {
+    border: 1px solid lightgrey;
+    background-color:white;
+    background-image:url(/bilder/google.png);
+    background-repeat:no-repeat;
+    background-size:8%;
+    background-position: center;
+    background-position-x: 7%;
+    margin-left:1em;
+}
+
+.facebook-btn {
+    background-color:#faf6f5;
+    border-radius:4px;
+    background-image:url(/bilder/fb.png);
+    background-repeat:no-repeat;
+    background-size:20px;
+    background-position: center;
+    border:none;
+    margin-left:1em;
+}
+
+.apple-btn {
+    background-color:#faf6f5;
+    border-radius:4px;
+    background-image:url(/bilder/apl.png);
+    background-repeat:no-repeat;
+    background-size:30px;
+    background-position: center;
+    border:none;
+    margin-left:1em;
+}
+
+.text-or {
+    margin-top:2em;
+    margin-bottom: 2em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#B5B5B5;
+    font-size:0.8rem;
+}
+
+.register {
+    display:grid;
+    font-size:0.8rem;
+    color: #a9a8a6;
+    grid-template-rows: auto auto auto auto;
+    
+}
+
+input[type=text-name], input[type=text-password], input[type=text-email]  {
+    border:none;
+    border-bottom:1px solid #a9a8a6;
+}
+
+#password {
+    background-image:url(/bilder/eye.png);
+    background-repeat:no-repeat;
+    background-size:20px;
+    background-position: right;
+
+}
+
+.Password-strength {
+    color:black;
+}
+
+.green-bar {
+    width:100%;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top:1em;
+}
+
+.green-bar div {
+    width:95%;
+    height:0.2em;
+    background-color:green;
+    border-radius:5px;
+}
+
+.green-bar div:nth-of-type(4) {
+    background-color:  #f3f3f3;
+}
+
+.checkbox {
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 1em;
+    margin-top:1em;
+}
+
+
+
+.createaccount {
+    background-color: #F26A44;
+    color:#ffff;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:3em;
+    margin-top:2em;
+    margin-bottom:2em;
+    border-style:hidden;
+    border-radius: 8px;
+} 
+.lang {
+    display: none;
+}
+
+.google-btn:hover, .apple-btn:hover, .facebook-btn:hover {
+    background-color: pink;
+}
+
+
+
+@media only screen and (min-width: 450px) {
+
+    .main {
+        height:100vh;
+        display:grid;
+        grid-template-columns: 40% 65%;
+    }
+    
+    .top-bar {
+        background-color: #faf6f5;
+        height:100%;
+    }
+
+    article {
+        display:grid;
+        grid-template-columns:auto;
+        justify-content:center;
+        align-items: center;
+        height: 100%;
+        width:100%;
+    }
+    .toptext-B {
+        padding-top: 0.5rem;     
+        text-indent:1px;
+        font-size:0.7rem;
+    }
+
+    .text-or {
+        width:50%;
+    }
+
+    
+    .lang {
+        display: contents;
+        height: 50px; 
+      
+        
+   }
+   
+   .lang p {
+       font-size:0.9rem;
+       display:flex;
+       justify-content: flex-end;
+       align-items: flex-end;
+       color: #a9a8a6;
+      
+   }
+   
+   
+}
+
